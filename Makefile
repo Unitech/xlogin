@@ -1,4 +1,4 @@
-BASH = /usr/bin/bash
+BASH = /bin/bash
 SHELL := $(BASH)
 
 install = install -D --mode=$(1) <(sed -e "s|@bash@|$(BASH)|g" $(2)) $(DESTDIR)$(3)/$(2:.in=)
